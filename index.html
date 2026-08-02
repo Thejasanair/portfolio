@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thejas A. Nair — Numerical Relativity &amp; Gravitational Physics</title>
+<meta name="description" content="Thejas A. Nair — MSc Physics, Central University of Kerala. Research in numerical relativity, gravitational-wave astrophysics, and galactic dynamics.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Ambient field the signal is measured against -->
+<canvas id="starfield" aria-hidden="true"></canvas>
+
+<div class="grain" aria-hidden="true"></div>
+
+<header class="site-header" id="top">
+  <div class="header-inner">
+    <a class="wordmark" href="#top">
+      <span class="wordmark-symbol" aria-hidden="true">Ϙ</span>
+      <span class="wordmark-text">Thejas&nbsp;A.&nbsp;Nair</span>
+    </a>
+
+    <nav class="site-nav" id="site-nav">
+      <a href="#about" data-nav>About</a>
+      <a href="#research" data-nav>Research</a>
+      <a href="#education" data-nav>Education</a>
+      <a href="#skills" data-nav>Skills</a>
+      <a href="#achievements" data-nav>Achievements</a>
+      <a href="#contact" data-nav>Contact</a>
+    </nav>
+
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>MSc Physics · Central University of Kerala</p>
+
+      <h1 class="hero-title">
+        Thejas A. Nair
+      </h1>
+      <p class="hero-accent">reading the shape of spacetime</p>
+
+      <p class="hero-lede">
+        I work in numerical relativity and gravitational-wave astrophysics —
+        evolving the spacetime around neutron stars on a computer, and
+        tracking how small errors on a numerical grid grow into large
+        ones. My broader interests sit alongside this, in quantum field
+        theory and cosmology.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="mailto:thejasanair275@gmail.com">Get in touch</a>
+        <a class="btn btn-ghost" href="#research">See the research ↓</a>
+      </div>
+    </div>
+
+    <!-- Signature element: an animated inspiral / chirp waveform -->
+    <figure class="chirp-figure">
+      <canvas id="chirp" width="1400" height="260" role="img"
+        aria-label="An animated chirp waveform: oscillations that grow faster and taller, in the shape of a gravitational-wave signal from two inspiraling neutron stars, then ring down."></canvas>
+      <figcaption>
+        <span class="mono">GW · simulated inspiral chirp</span>
+        <span class="mono">Δf ↑ as separation ↓</span>
+      </figcaption>
+    </figure>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="section-inner about-grid">
+      <div class="section-head">
+        <p class="kicker">01 — About</p>
+        <h2>Working at the numerical edge of general relativity</h2>
+      </div>
+
+      <div class="about-body">
+        <p>
+          I am a physics graduate from Kerala with a working interest in how
+          strong gravity behaves when it cannot be solved by hand. My MSc
+          project used the Einstein Toolkit to evolve the density field of a
+          neutron star forward in time, under the supervision of
+          <strong>Dr. Krishna Mohan Parattu</strong> at IIT Mandi, and I spent
+          a good part of that project simply comparing how numerical error
+          grows on coarser and finer grids.
+        </p>
+        <p>
+          Outside of that project, I have looked at how galactic bars form
+          and how central bulges influence that process, and — further back
+          — measured the wavelength of LED light using Newton's rings, my
+          first real experiment. I am currently preparing for research and
+          doctoral positions in gravitation and related areas of theoretical
+          physics.
+        </p>
+
+        <dl class="quick-facts">
+          <div>
+            <dt>Based in</dt>
+            <dd>Kannur, Kerala, India</dd>
+          </div>
+          <div>
+            <dt>Email</dt>
+            <dd><a href="mailto:thejasanair275@gmail.com">thejasanair275@gmail.com</a></dd>
+          </div>
+          <div>
+            <dt>Phone</dt>
+            <dd><a href="tel:+919745461722">+91 97454 61722</a></dd>
+          </div>
+          <div>
+            <dt>Languages</dt>
+            <dd>Malayalam, English, Hindi</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RESEARCH ============ -->
+  <section class="section section-alt" id="research">
+    <div class="section-inner">
+      <div class="section-head">
+        <p class="kicker">02 — Research</p>
+        <h2>Research experience</h2>
+      </div>
+
+      <div class="research-list">
+
+        <article class="research-card">
+          <div class="research-meta">
+            <span class="mono">Apr 2023 – Aug 2023</span>
+            <span class="research-tag">MSc project</span>
+          </div>
+          <h3>Numerical Relativity using Einstein Toolkit</h3>
+          <p class="research-sup">Supervised by Dr. Krishna Mohan Parattu, IIT Mandi</p>
+          <p>
+            Studied the ADM formulation and the broader machinery of
+            numerical relativity, then used the Einstein Toolkit to evolve
+            the density profile of a neutron star in time. Compared how
+            numerical error propagates across a range of grid resolutions.
+          </p>
+        </article>
+
+        <article class="research-card">
+          <div class="research-meta">
+            <span class="mono">2022 – 2023</span>
+            <span class="research-tag">MSc mini project</span>
+          </div>
+          <h3>Galaxy Bars</h3>
+          <p class="research-sup">Supervised by Dr. Vinu Vikram, Central University of Kerala</p>
+          <p>
+            Studied the formation of bars in disk galaxies and examined how
+            the presence and size of a central bulge affects bar formation.
+          </p>
+        </article>
+
+        <article class="research-card">
+          <div class="research-meta">
+            <span class="mono">2020 – 2021</span>
+            <span class="research-tag">BSc project</span>
+          </div>
+          <h3>Wavelength of LEDs via Newton's Rings</h3>
+          <p class="research-sup">Supervised by C.V. Sandhya, Mahatma Gandhi College</p>
+          <p>
+            Calculated the wavelengths of blue, green, and red LEDs using
+            the Newton's-ring interference experiment.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+  <section class="section" id="education">
+    <div class="section-inner">
+      <div class="section-head">
+        <p class="kicker">03 — Education</p>
+        <h2>Education</h2>
+      </div>
+
+      <ol class="timeline">
+        <li>
+          <div class="timeline-date mono">2016</div>
+          <div class="timeline-body">
+            <h3>SSLC</h3>
+            <p class="timeline-place">St Mary's Higher Secondary School, Edoor, Kannur</p>
+            <p>A+ secured in all subjects.</p>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-date mono">2016 – 2018</div>
+          <div class="timeline-body">
+            <h3>Plus Two</h3>
+            <p class="timeline-place">St Mary's Higher Secondary School, Edoor, Kannur</p>
+            <p>Overall percentage: 97.17%.</p>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-date mono">2018 – 2023</div>
+          <div class="timeline-body">
+            <h3>BSc Physics</h3>
+            <p class="timeline-place">Mahatma Gandhi College · Kannur University</p>
+            <p>CGPA: 8.1 / 10.</p>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-date mono">2021 – 2023</div>
+          <div class="timeline-body">
+            <h3>MSc Physics</h3>
+            <p class="timeline-place">Central University of Kerala, Kasaragod</p>
+            <p>CGPA: 7.75 / 10.</p>
+          </div>
+        </li>
+      </ol>
+
+      <div class="courses-wrap">
+        <h3 class="courses-title">Courses &amp; workshops attended</h3>
+        <ul class="courses-list">
+          <li><span class="mono">Jul – Aug 2023</span><span>Summer School on Gravitational Wave Astronomy, ICTS Bangalore</span></li>
+          <li><span class="mono">Jan 2023</span><span>International Conference on Functional Materials for Advanced Technology (ICFMAT), Dept. of Physics, CUK</span></li>
+          <li><span class="mono">Jul 2023 – Oct 2023</span><span>Introduction to Classical Mechanics — NPTEL, IIT Hyderabad</span></li>
+          <li><span class="mono">Jan – Apr 2024</span><span>Group Theory Methods in Physics — NPTEL, IIT Bombay</span></li>
+          <li><span class="mono">Jul 2020</span><span>Recent Trends in Raman Spectroscopy, University of Kerala</span></li>
+          <li><span class="mono">Dec 2018</span><span>Volunteered, State-level Workshop on BSc Experiments, Mahatma Gandhi College</span></li>
+          <li><span class="mono">—</span><span>100 Years of Gravitational Waves, Prof. Rai Weiss — World Science U</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section section-alt" id="skills">
+    <div class="section-inner">
+      <div class="section-head">
+        <p class="kicker">04 — Skills</p>
+        <h2>Computational skills</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3 class="mono">Fortran</h3>
+          <ul>
+            <li>Solved the one-dimensional harmonic oscillator using the shooting method.</li>
+            <li>Solved standard PDEs — parabolic, hyperbolic, elliptical — using finite-difference methods.</li>
+            <li>Worked with initial-value problems and numerical methods including tridiagonal solvers, naive Gaussian elimination, and Monte Carlo.</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3 class="mono">Python</h3>
+          <ul>
+            <li>Solved differential equations using Runge–Kutta and Newton–Raphson methods.</li>
+            <li>Used Matplotlib / Pyplot to visualize the behavior of numerical solutions.</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3 class="mono">Origin</h3>
+          <ul>
+            <li>Used across three semesters of MSc lab work for graph analysis and parameter extraction.</li>
+            <li>Applied to studying XRD peaks of compounds.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ACHIEVEMENTS ============ -->
+  <section class="section" id="achievements">
+    <div class="section-inner">
+      <div class="section-head">
+        <p class="kicker">05 — Achievements</p>
+        <h2>Academic achievements</h2>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-num">496</span>
+          <span class="stat-label">All-India Rank, JEST</span>
+          <span class="stat-year mono">2024</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">1806</span>
+          <span class="stat-label">All-India Rank, GATE</span>
+          <span class="stat-year mono">2024</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">1957</span>
+          <span class="stat-label">All-India Rank, IIT JAM</span>
+          <span class="stat-year mono">2021</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">26</span>
+          <span class="stat-label">Rank, CUSAT CAT</span>
+          <span class="stat-year mono">2021</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">47</span>
+          <span class="stat-label">Rank, Pondicherry Central University entrance</span>
+          <span class="stat-year mono">2021</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">41</span>
+          <span class="stat-label">State Rank, APT Talent Search</span>
+          <span class="stat-year mono">2021</span>
+        </div>
+      </div>
+
+      <div class="achv-notes">
+        <p>
+          Qualified CUCET 2021 with departmental ranks of <strong>4</strong> at
+          Central University of Kerala, <strong>4</strong> at Central
+          University of Karnataka, <strong>3</strong> at Central University
+          of Punjab, and <strong>4</strong> at Central University of
+          Rajasthan.
+        </p>
+        <p>
+          Selected as one of twenty students nationwide by the Kerala
+          Theoretical Physics Initiative (KTPI) for the Active Research
+          Training (ART) program, 2022.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ACTIVITIES ============ -->
+  <section class="section section-alt" id="activities">
+    <div class="section-inner">
+      <div class="section-head">
+        <p class="kicker">06 — Activities</p>
+        <h2>Beyond the lab</h2>
+      </div>
+
+      <div class="activity-grid">
+        <div class="activity-card">
+          <h3>National Service Scheme</h3>
+          <p>10-day NSS camp and a 3-day nature camp (2018–19); active in flood-relief work in 2018; placed 4th in a state-level model-parliament competition.</p>
+        </div>
+        <div class="activity-card">
+          <h3>Quiz Club</h3>
+          <p>Founding member of the Quiz Club at Mahatma Gandhi College; second prize at an inter-college quiz hosted by the Dept. of Physics, Govt. Brennen College, Thalassery.</p>
+        </div>
+        <div class="activity-card">
+          <h3>Outreach</h3>
+          <p>Gave a talk on the Apollo mission for its 50th anniversary (2019); volunteered in a KSSP public-awareness program during the annular solar eclipse of 26 Dec 2019.</p>
+        </div>
+        <div class="activity-card">
+          <h3>Sports</h3>
+          <p>Competed in inter-department cricket and football.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ REFERENCES ============ -->
+  <section class="section" id="references">
+    <div class="section-inner">
+      <div class="section-head">
+        <p class="kicker">07 — References</p>
+        <h2>References</h2>
+      </div>
+
+      <div class="ref-grid">
+        <div class="ref-card">
+          <h3>Dr. Krishna Mohan Parattu</h3>
+          <p>Assistant Professor, School of Physical Sciences<br>IIT Mandi, Himachal Pradesh</p>
+          <a href="mailto:krishna@iitmandi.ac.in">krishna@iitmandi.ac.in</a>
+        </div>
+        <div class="ref-card">
+          <h3>Prof. Vincent Mathew</h3>
+          <p>Dean of Physical Sciences<br>Central University of Kerala, Kasaragod</p>
+          <a href="mailto:vincent@cukerala.ac.in">vincent@cukerala.ac.in</a>
+        </div>
+        <div class="ref-card">
+          <h3>Dr. Vinu Vikram</h3>
+          <p>Assistant Professor, Department of Physics<br>Central University of Kerala, Kasaragod</p>
+          <a href="mailto:vvinuv@cukerala.ac.in">vvinuv@cukerala.ac.in</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ CONTACT / FOOTER ============ -->
+<footer class="site-footer" id="contact">
+  <div class="footer-inner">
+    <div class="footer-main">
+      <h2>Let's talk gravity.</h2>
+      <p>Open to research collaborations, doctoral positions, and conversations about numerical relativity.</p>
+      <a class="btn btn-primary" href="mailto:thejasanair275@gmail.com">thejasanair275@gmail.com</a>
+    </div>
+    <div class="footer-meta">
+      <p>Karingalayath House, Edoor · Kannur, Kerala 670704 · India</p>
+      <p>+91 97454 61722</p>
+      <p class="mono footer-copy">© <span id="year"></span> Thejas A. Nair</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
