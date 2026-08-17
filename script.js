@@ -4,22 +4,6 @@ document.getElementById("last-updated").textContent = new Date().toLocaleDateStr
   year: "numeric"
 });
 
-var galleryToggle = document.getElementById("gallery-toggle");
-var galleryContent = document.getElementById("gallery-content");
-
-if (galleryToggle && galleryContent) {
-  galleryToggle.addEventListener("click", function () {
-    var isHidden = galleryContent.hasAttribute("hidden");
-    if (isHidden) {
-      galleryContent.removeAttribute("hidden");
-      galleryToggle.textContent = "Hide Gallery";
-    } else {
-      galleryContent.setAttribute("hidden", "");
-      galleryToggle.textContent = "Show Gallery";
-    }
-  });
-}
-
 /*
   GALLERY
   -------

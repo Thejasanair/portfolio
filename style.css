@@ -82,21 +82,6 @@ img {
   margin-top: 6px;
 }
 
-#gallery-toggle {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 16px;
-  color: #0000EE;
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-#gallery-toggle:hover {
-  color: #551A8B;
-}
-
 #gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
