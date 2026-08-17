@@ -64,19 +64,19 @@ img {
   margin: 0 0 12px 0;
 }
 
-.gallery figure {
+.gallery-item {
   width: 200px;
   margin: 0;
 }
 
-.gallery figure img {
+.gallery-item img {
   width: 200px;
   height: 200px;
   object-fit: cover;
   display: block;
 }
 
-.gallery figcaption {
+.gallery-caption {
   font-size: 14px;
   text-align: center;
   margin-top: 6px;
